@@ -1,5 +1,6 @@
 //const url = 'https://www.balldontlie.io/api/v1/players'; => no tiene imagen de los jugadores 
 
+//un caso de async 
 /*async function fetchAndDisplayPlayers() {
     const url = 'https://www.balldontlie.io/api/v1/players';
 
@@ -35,11 +36,9 @@
   // Llama a la función al cargar la página
   fetchAndDisplayPlayers();
 
-//              otro modo
+// -------------------------Otro modo-------------------------------
 
 /*
-
-
 
 const url = 'https://www.balldontlie.io/api/v1/players';
 
@@ -69,7 +68,7 @@ fetch (url)
     .catch(error => console.log(error))
 
 */
-// URL de la API de jugadores
+// URL de la API de jugadores 
   const apiUrl = 'https://www.balldontlie.io/api/v1/players';
 
   // Elemento contenedor de la grilla
@@ -97,8 +96,8 @@ fetch (url)
           <h2>${player.first_name} ${player.last_name}</h2>
           <p>Posición: ${player.position}</p>
           <p>Equipo: ${player.team.full_name}</p>
-          <!-- Agrega más campos según tus necesidades -->
-        `;
+         
+        `;// No tiene imagenes de jugadores una falla total para hacer las card
 
         // Agregar la tarjeta al contenedor de la grilla
         gridContainer.appendChild(card);
@@ -107,7 +106,4 @@ fetch (url)
     .catch(error => {
       console.error('Error al obtener los datos:', error);
     });
-
-
-
 

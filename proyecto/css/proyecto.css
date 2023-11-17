@@ -3,6 +3,7 @@
 body{
 margin: 0%;
 padding: 0%;
+font-family: 'Roboto', sans-serif;
 
 }
 
@@ -39,7 +40,7 @@ header{
     font-size: 20px;
 }
 main{
-    margin-top: 100px;
+    margin-top: 130px;
 }
 
 .container-carrusel{
@@ -52,16 +53,7 @@ main{
     align-items: center;
 }
 
-footer{
-    margin-top: auto;
-    padding-bottom: 30px;
-    display: flex;
-    justify-content: space-evenly;
-}
-.div2{
-    display: flex;
-    flex-direction: column;
-}
+
 .card {
     
     padding: 20px;
@@ -89,5 +81,49 @@ footer{
     font-family: 'Roboto', sans-serif;
     padding: 20px;
     text-align: justify;
+    
+}
+
+footer{
+    padding-top: 20px;
+    border: solid 2px black;
+    background-color: rgb(40, 40, 249);
+    margin-top: auto;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.div1{
+    border: solid 1px orange;  
+    width: 500px;
+    justify-content: center;
+    box-shadow: 5px 4px 10px gray ;
+    color: white;
+    padding-top: 20px;
+}
+#h5{
+    text-align: center;
+   
+}
+
+.div2{
+    display: flex;
+    flex-direction: column;
+    border: solid 1px orange;  
+    width: 500px;
+    align-items: center;
+    box-shadow: 5px 4px 10px gray ;
+    color: white;
+    padding-top: 20px;
+}
+
+#box-redes{
+    margin-top: 10px;
+}
+#redes{
+    color: white;
+    text-align: justify;
+    
     
 }
