@@ -62,7 +62,7 @@ footer{
     display: flex;
     flex-direction: column;
 }
-.player-card {
+.card {
     
     padding: 20px;
     border: 1px solid #ccc;

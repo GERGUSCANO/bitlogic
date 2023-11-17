@@ -1,5 +1,6 @@
-//www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita
-async function fetchAndDisplayPlayers() {
+//const url = 'https://www.balldontlie.io/api/v1/players'; => no tiene imagen de los jugadores 
+
+/*async function fetchAndDisplayPlayers() {
     const url = 'https://www.balldontlie.io/api/v1/players';
 
     try {
@@ -33,7 +34,14 @@ async function fetchAndDisplayPlayers() {
 
   // Llama a la función al cargar la página
   fetchAndDisplayPlayers();
-/*const url = 'https://www.balldontlie.io/api/v1/players';
+
+//              otro modo
+
+/*
+
+
+
+const url = 'https://www.balldontlie.io/api/v1/players';
 
 fetch (url)
     .then(response => response.json())
@@ -54,28 +62,52 @@ fetch (url)
 
 
     })
-    
-    
-    
+      
     
     .then(data => console.log(data))
        
     .catch(error => console.log(error))
 
-const mostrarinfo = (data) => {
-    console.log(data)
-    let body=''
-    for (let i=0; i<data.length; i++){
-        body +=`
-        <div class= "cardbox">
-            <div class="card">
-                <h2 id="nombreplayer">${data[i].firstname}  ${data[i].lastname}</h2>
-                <p id="info"> ${data[i].position} + ${data[i].team}
-                <button onclick="nasInfo">+ info</button>
-            </div>        
-    
-        </div>
-        `
-    }
-    document.getElementById('productos').innerHTML=body
-} */
+*/
+// URL de la API de jugadores
+  const apiUrl = 'https://www.balldontlie.io/api/v1/players';
+
+  // Elemento contenedor de la grilla
+  const gridContainer = document.getElementById('player-list');
+
+  // Realizar la solicitud usando fetch
+  fetch(apiUrl)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`Error en la solicitud: ${response.status}`);
+      }
+      return response.json();
+    })
+    .then(data => {
+      // En este punto, 'data' contiene la información de la API en formato JSON
+      const players = data.data;
+
+      // Recorrer el array de jugadores y renderizar las tarjetas
+      players.forEach(player => {
+        const card = document.createElement('div');
+        card.className = 'card';
+
+        // Puedes personalizar qué información mostrar en cada tarjeta
+        card.innerHTML = `
+          <h2>${player.first_name} ${player.last_name}</h2>
+          <p>Posición: ${player.position}</p>
+          <p>Equipo: ${player.team.full_name}</p>
+          <!-- Agrega más campos según tus necesidades -->
+        `;
+
+        // Agregar la tarjeta al contenedor de la grilla
+        gridContainer.appendChild(card);
+      });
+    })
+    .catch(error => {
+      console.error('Error al obtener los datos:', error);
+    });
+
+
+
+
