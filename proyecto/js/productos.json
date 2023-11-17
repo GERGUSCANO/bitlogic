@@ -1,0 +1,68 @@
+{
+    "autos": [
+        {
+            "marca": "Volkswagen",
+            "modelo": "trend",
+            "año": 2023,
+            "tipo": "sedan 4 puertas"        
+        },
+        {
+            "marca": "Volkswagen",
+            "modelo": "suran",
+            "año": 2023,
+            "tipo": "sedan 5 puertas"    
+        },
+        {
+            "marca": "Ford",
+            "modelo": "Cruze",
+            "año": 2023,
+            "tipo": "sedan 5 puertas"    
+        },
+        {
+            "marca": "Ford",
+            "modelo": "Ranger",
+            "año": 2023,
+            "tipo": "pick-up 4x4"    
+        },
+        {
+            "marca": "Fiat",
+            "modelo": "Punto",
+            "año": 2023,
+            "tipo": "sedan 4 puertas"    
+        },
+        {
+            "marca": "Fiat",
+            "modelo": "Siena",
+            "año": 2023,
+            "tipo": "sedan 5 puertas"    
+        }
+    ],
+    "motovehiculo":[
+        {
+            "marca": "Bajaj",
+            "modelo": "NS 200",
+            "año": 2023,
+            "tipo": "motovehiculo"
+        },
+        {
+            "marca": "Bajaj",
+            "modelo": "Dominar 400",
+            "año": 2023,
+            "tipo": "motovehiculo"
+        },
+        {
+            "marca": "Benelli",
+            "modelo": "Leoncino 500cc",
+            "año": 2023,
+            "tipo": "motovehiculo"
+        },
+        {
+            "marca": "Honda",
+            "modelo": "CB190",
+            "año": 2023,
+            "tipo": "motovehiculo"
+        }
+    ]
+
+
+}

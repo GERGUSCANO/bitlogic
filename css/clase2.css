@@ -1,0 +1,112 @@
+
+body{
+    background-image: url('../src/5594016.jpg');
+    background-size:contain;
+    margin: 0%;
+    padding: 0%;
+    height: 100vh;
+}
+header{
+    background-color: rgba(22, 22, 22, 0.705);
+    box-shadow: 1px 5px 10px rgba(128, 128, 128, 0.599);
+    border: 1px solid rgba(128, 128, 128, 0.705);
+    margin-bottom: 20px;
+    color: white;
+
+}
+
+main{
+    margin-left: 10px;
+}
+
+.contenedor{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+
+}
+#imagen1{
+    margin-top: 10px;
+    width: 500px;
+    box-shadow: 1px 5px 10px black;
+}
+
+
+
+#titulo{
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+
+}
+#titulo_sec{
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+}
+span{
+    font-family: 'Nunito', sans-serif;
+    font-size: 25px;
+    
+}
+.section{
+    font-family: 'Nunito', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Nunito', sans-serif;
+}
+a:hover{
+    color: rgb(122, 66, 228);
+}
+/* el atributo :visited nos permite cambiar de color si la pagina es visitada 
+a:visited{
+    color:black
+}
+*/
+
+
+footer{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 2px solid black;
+    background-color: rgba(22, 22, 22, 0.706);
+    color: rgb(13, 13, 13);
+    
+}
+.pie{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    border: 1px solid rgb(144, 143, 143);
+    width: 100%;
+}
+#nombre{
+    color: rgb(165, 158, 158);
+    text-decoration: none;
+    font-size: 20px;
+}
+#nombre:hover{
+    color: azure;
+}
+.mapouter{
+    padding-left: 42px;
+    padding-bottom: 20px;
+}
+#lista-contacto{
+    list-style: none;
+    padding-left: 150px;
+    text-align: justify;
+    
+}
+#a-contacto{
+    text-decoration: none;
+    color: rgb(168, 168, 168);
+    font-size: 20px;
+}
+#a-contacto:hover{
+    color: azure;
+}

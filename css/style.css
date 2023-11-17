@@ -1,0 +1,49 @@
+body{
+    background-color: rgb(255, 255, 255);
+    
+}
+header{
+    background-color: black;
+    
+}
+.h1{
+    text-align: center;
+    font-family: sans-serif;
+    margin-bottom: 15px;
+    color: white;
+    
+}
+.p1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    
+}
+.p1 a{
+    text-decoration: none;
+    color: black;
+}
+.p2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+.p2 a{
+    text-decoration: none;
+    color: black;
+}
+.p1 a:hover{
+    color: brown;
+    
+}
+.p2 a:hover{
+    color: brown;
+    
+}
+#imagen{
+    width: 300px;
+    margin-left: 33%;
+}
+#imagen2{
+    width: 600px;
+    margin-left: 33%;
+}

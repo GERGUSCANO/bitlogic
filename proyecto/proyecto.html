@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto BitLogic</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../proyecto/css/proyecto.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img id="logo" src="../src/nba2.jpg" alt="logo">
+        </div>
+        <div class="nav-bar">
+            <a id="nav" href="#">Inicio</a>
+            <a id="nav" href="#historia">Historia</a>
+            <a id="nav" href="#player-list">Jugadores</a>
+            <a id="nav" href="#contacto">Contacto</a>
+        </div>
+    </header>
+    <main>
+        <div class="container-carrusel">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../src/cleveland_cavaliers.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../src/1200px-toronto_raptors_logo-svg.webp" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../src/yyy1024px-Boston_Celtics.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+    <!--<div class="players" id="players">
+
+          
+
+        </div>-->
+        <div class="historia" id="historia">
+          <p >La Basketball Association of America (BAA) fue fundada en 1946 por propietarios de los principales pabellones deportivos del noreste y medio-oeste, como el Madison Square Garden de Nueva York. Los 11 equipos que abrieron el telón en la temporada inaugural 1946-47 fueron Boston Celtics, Philadelphia Warriors, New York Knicks, Washington Capitols, Providence Steamrollers, Toronto Huskies, Chicago Stags, St. Louis Bombers, Cleveland Rebels, Detroit Falcons y Pittsburgh Ironmen. Únicamente tres de esos equipos han perdurado hasta nuestros días: Boston Celtics, New York Knicks y Golden State Warriors siendo por tanto los únicos que han disputado todas las temporadas de la liga desde su fundación. De ellos, tan solo Boston Celtics y New York Knicks no se han movido de ciudad siendo considerados por estos motivos como dos de los equipos más representativos e históricos de la liga. En cambio, los Warriors nacieron en Filadelfia, para mudarse en 1962 a San Francisco y en 1971 a Oakland, lugar que han ocupado hasta 2019, año en el que se volvieron a trasladar a San Francisco.
+
+          Aunque existieron antes otras ligas de baloncesto profesionales en el país, como la American Basketball League (ABL) y la National Basketball League (NBL), la BAA fue la primera liga en intentar jugar principalmente en pabellones grandes de ciudades importantes. Durante esos años el nivel de la BAA no era obviamente aún mejor que el de las otras ligas debido a su reciente creación, ni los equipos se podían comparar con clubes independientes como los Harlem Globetrotters, considerado entonces como uno de los mejores equipos de la nación, si no el mejor. Otros ejemplos fueron el de Baltimore Bullets, quien tras ser finalista de la ABL en 1947, que se mudó a la BAA y ganó el título en la temporada 1947-48, mismo camino que tomaron los Minneapolis Lakers, ganadores de la NBL en 1948 y al año siguiente en la BAA dándole a la nueva liga una primera proyección importante.</p>
+
+
+        </div>
+        <div id="player-list"></div>
+
+    </main>
+    <footer class="d-flex footer">
+        <div class="div1 p-2 mt-2">
+            <h3>Nuestras Redes Sociales</h3>
+            <ul id="box-redes">
+                <li id="redes">facebook</li>
+                <li id="redes">instagram</li>
+                <li id="redes">x</li>
+                <li id="redes">linkedin</li>
+            </ul>          
+        </div>
+        <div class="div2 p-2 mt-2">
+            <h4>Contactame</h4>
+            <form action="" id="formulario">
+                <label for="email" name="email" id="email">Email</label><br>
+                <input type="email" name="email" id="email" placeholder="Ingrese su email" required><br>
+                <label for="tel" name="tel" id="tel">Telefono</label><br>
+                <input type="number" name="tel" id="tel" placeholder="Ingrese su numero"><br>
+                <label for="" name="consulta" id="consulta">Consulta</label><br>
+                <textarea name="" id="" cols="30" rows="5" placeholder="Ingrese su consulta"></textarea><br>
+                <button type="submit">Enviar</button>
+
+
+            </form>
+        </div>
+      
+    </footer>
+    <script src="../proyecto/js/proyecto1.js"></script>
+</body>
+</html>
